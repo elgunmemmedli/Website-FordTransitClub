@@ -1,0 +1,168 @@
+@media only screen and (max-width:1032px){
+    .navbar ul li a{
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: capitalize;
+        padding: 10px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:992px){
+    .top_header_items a p{
+        display: none;
+    }
+
+    .top_header_items a {
+        border-right: 0 !important;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar .mobile-icon{
+        display: block;
+    }
+
+    .navbar .mobile-icon::before{
+        content: '\f0c9';
+        font-family: fontawesome;
+        font-size: 40px;
+        color: #015a9c;
+    }
+
+
+    .navbar .mobile-icon.aktiv::before{
+        content: '\f00d';
+        font-family: fontawesome;
+        font-size: 40px;
+        color: #015a9c;
+    }
+  
+
+
+    .only_mobile{
+        display: none;
+        background-color: #fff;
+        box-shadow: 0 2px 2px 2px gray;
+        position: absolute;
+        top:65px;
+        left: -400px;
+        width: 70%;
+        height: 100vh;
+        animation-name: mobile;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes mobile {
+        from{
+            left: -400px;
+        }
+        to{
+            left: 0;
+        }
+    }
+
+    .only_mobile.aktiv{
+        display: block;
+    }
+
+    .only_mobile ul{
+        padding-top: 50px;
+        padding-left: 10px !important;
+    }
+
+    .only_mobile ul li{
+        list-style: none;
+        margin: 30px 0;
+    }
+
+    .only_mobile ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+      padding: 20px;
+    }
+
+    
+.only_mobile .active{
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.only_mobile ul li a:hover{
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.footer_one{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.top_header{
+    padding: 20px 0;
+}
+
+.top_header_items i{
+    font-size: 25px;
+}
+
+.navbar img{
+    width: 130px;
+}
+
+.about{
+    flex-direction: column;
+}
+
+.about img, .about p{
+    width: 100%;
+}
+
+}
+
+
+
+@media only screen and (max-width:768px){
+    .services{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .services div{
+        margin-bottom: 50px;
+    }
+
+
+    .services div:nth-child(even) img{
+        order: 3;
+    }
+    
+    .services div:nth-child(even) h3{
+        order: 1;
+    }
+    
+    .services div:nth-child(even) p{
+        order: 2;
+    }
+
+}
+
+
+@media only screen and (max-width:400px){
+    .services img{
+        width: 100%;
+    }
+    
+    .services p{
+        width: 100%;
+    }
+
+ 
+}
